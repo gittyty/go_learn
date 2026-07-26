@@ -25,8 +25,8 @@ func main() {
     reader := bufio.NewReader(os.Stdin)
     var user User
 
-    // 最多尝试 3 次
-    maxAttempts := 3
+    // 最多尝试 4 次
+    maxAttempts := 4
     for attempt := 1; attempt <= maxAttempts; attempt++ {
         fmt.Print("请输入用户名: ")
         input, err := reader.ReadString('\n')
